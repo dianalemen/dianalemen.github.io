@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<title>SINOPTIK: Погода</title>
+	<head>
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+</head>
+  </head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="#"><img src="img/sinoptic-logo.png" alt="Погода"></a>
+	</div>
+	<div class="search">
+	  <input type="search" id="searchInput" placeholder="Назва населеного пункту, країни або регіону">
+	  <button type="submit" id="butt"></button>
+	</div>
+	<div class="region">
+	    <h1>Погода у <strong>Львові</strong></h1>
+	    <p>Обласний центр Львівської області</p>
+	</div>
+	<div class="links">
+	  <a href="#">7 днів</a>
+	  <a href="#">10 днів</a><br>
+	  <a href="#">обрати інше місто</a>
+	</div>
+  </div>
+  <div class="tabs">
+    <div class="tab" id="tab1">
+	  <p class="day">Вівторок</p>
+	  <p class="date">04</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>+4</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+15</span>
+	</div>
+	</div>
+	
+	 <div class="tab" id="tab2">
+	  <p class="day">Середа</p>
+	  <p class="date">05</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>+5</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+9</span>
+	</div>
+	</div>
+	 <div class="tab" id="tab3">
+	  <p class="day">Четвер</p>
+	  <p class="date">06</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>-5</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+3</span>
+	</div>
+	</div>
+	 <div class="tab" id="tab4">
+	  <p class="day">П'ятниця</p>
+	  <p class="date">07</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>-3</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+1</span>
+	</div>
+	</div>
+	 <div class="tab" id="tab5">
+	  <p class="day">Субота</p>
+	  <p class="date dayFree">08</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>-1</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+5</span>
+	</div>
+	</div>
+	 <div class="tab" id="tab6">
+	  <p class="day">Неділя</p>
+	  <p class="date dayFree">09</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>-5</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+9</span>
+	</div>
+	</div>
+	 <div class="tab" id="tab7">
+	  <p class="day">Понеділок</p>
+	  <p class="date">10</p>
+	  <p class="month">жовтня</p>
+	  <div class="image">
+		  <img src="img/d430.gif">
+	    </div>
+	<div class="min">
+	    мін.
+	    <span>-3</span>
+	</div>
+	<div class="max">
+	    макс.
+	    <span>+3</span>
+	</div>
+	</div>
+  </div>
+  <div class="main">
+  <div class="leftSide">
+  <div class="text">
+    <p id="weath">Погода сьогодні у Львові</p>
+    <img src="img/d420.jpg">
+	<p class="temp">+11°C</p>
+	</div>
+	<div class="title">
+	  <p>Температура, C</p>
+	  <p>відчувається як</p>
+	  <p>Тиск, мм</p>
+	  <p>Вологість, %</p>
+	  <p>Вітер, м/сек</p>
+	  <p>Ймовірність опадів, %</p>
+	</div>
+  </div>
+  <div class="rightSide">
+    <table>
+	<tr>
+	  <th colspan="2" class="bordR">ніч</th>
+	  <th colspan="2" class="bordR">ранок</th>
+	  <th colspan="2" class="bordR">день</th>
+	  <th colspan="2" class="bordR bord">вечір</th>
+	</tr>
+	<tr class="gray">
+	  <td>0:00</td><td class="bordR">3:00</td><td>6:00</td><td class="bordR">9:00</td><td>12:00</td><td class="bordR">15:00</td><td>18:00</td><td>21:00</td>
+	</tr>
+	<tr>
+	  <td><img src="img/n400.gif" title="хмарно"></td>
+	  <td class="bordR"><img src="img/n400.gif" title="хмарно"></td>
+	  <td><img src="img/n400.gif" title="хмарно"></td>
+	  <td class="bordR"><img src="img/n400.gif" title="хмарно"></td>
+	  <td><img src="img/n400.gif" title="хмарно"></td>
+	  <td class="bordR"><img src="img/n400.gif" title="хмарно"></td>
+	  <td><img src="img/n400.gif" title="хмарно"></td>
+	  <td><img src="img/n400.gif" title="хмарно"></td>
+	</tr>
+	<tr class="ttemp">
+	  <td>+8°</td><td class="bordR">+5°</td><td>+4°</td><td class="bordR">+6°</td><td>+5°</td><td class="bordR">+8°</td><td>+5°</td><td>+5°</td>
+	</tr>
+	<tr class="sens">
+	  <td>+6°</td><td class="bordR">+6°</td><td>+2°</td><td class="bordR">+6°</td><td>+7°</td><td class="bordR">+6°</td><td>+4°</td><td>+6°</td>
+	</tr>
+	<tr class="gray">
+	  <td>745</td><td class="bordR">747</td><td>748</td><td class="bordR">749</td><td>749</td><td class="bordR">749</td><td>749</td><td>749</td>
+	</tr>
+	<tr>
+	  <td>88</td><td class="bordR">94</td><td>92</td><td class="bordR">83</td><td>70</td><td class="bordR">58</td><td>70</td><td>75</td>
+	</tr>
+	<tr class="gray">
+	  <td>1.0</td><td class="bordR">2.0</td><td>1.0</td><td class="bordR">1.0</td><td>1.0</td><td class="bordR">1.0</td><td>1.0</td><td>1.0</td>
+	</tr>
+	<tr>
+	  <td>-</td><td class="bordR">-</td><td>-</td><td class="bordR">-</td><td>-</td><td class="bordR">-</td><td>-</td><td>-</td>
+	</tr>
+	</table>
+  </div>
+  </div>
+  </body>
+</html>
